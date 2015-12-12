@@ -57,6 +57,7 @@ alias gbsr='git bisect reset'
 alias gbss='git bisect start'
 
 alias gc='git commit -v'
+alias gci='git commit'
 alias gc!='git commit -v --amend'
 alias gcn!='git commit -v --no-edit --amend'
 alias gca='git commit -v -a'
@@ -77,8 +78,8 @@ compdef gcount=git
 alias gcp='git cherry-pick'
 alias gcs='git commit -S'
 
-alias gd='git diff'
-alias gdca='git diff --cached'
+alias gdf='git diff'
+alias gdfc='git diff --cached'
 alias gdct='git describe --tags `git rev-list --tags --max-count=1`'
 alias gdt='git diff-tree --no-commit-id --name-only -r'
 gdv() { git diff -w "$@" | view - }
